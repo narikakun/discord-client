@@ -33,10 +33,11 @@ $(function(){
         $.ajax({
             url: `${config.api}/channels/${$('#send_message_channel').val()}/messages`,
             type: "POST",
+            dataType: "jsonp",
             crossDomain: true,
             headers: {
                 "Authorization" : `Bot ${config.token}`,
-                "Access-Control-Allow-Origin" : "narikakun.github.io"
+                "Access-Control-Allow-Origin" : "*"
             },
             contentType: 'application/json',
             data: JSON.stringify({
