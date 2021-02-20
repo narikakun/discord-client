@@ -36,7 +36,7 @@ $(function(){
             crossDomain: true,
             headers: {
                 "Authorization" : `Bot ${config.token}`,
-                "Access-Control-Allow-Origin" : "*"
+                "Access-Control-Allow-Origin" : "narikakun.github.io"
             },
             contentType: 'application/json',
             data: JSON.stringify({
