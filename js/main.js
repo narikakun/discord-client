@@ -39,11 +39,9 @@ $(function(){
         $.ajax({
             url: `${config.api}/channels/${$('#send_message_channel').val()}/messages`,
             type: "POST",
-            dataType: "jsonp",
-            crossDomain: true,
             headers: {
                 "Authorization" : `Bot ${config.token}`,
-                "User-Agent" : "*"
+                "User-Agent" : "Discord Bot"
             },
             contentType: 'application/json',
             data: JSON.stringify({
