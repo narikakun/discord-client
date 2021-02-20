@@ -41,7 +41,10 @@ $(function(){
             contentType: 'application/json',
             data: JSON.stringify({
                 "content" : $('#send_message_content').val()
-            })
+            }),
+            beforeSend: function (req) {
+                req.setRequestHeader('User-Agent', 'Discord Bot');
+            }
         })
         .done( (data) => {
             console.log(data);
