@@ -28,11 +28,6 @@ $(function(){
         })
     });
 
-    $.ajaxSetup({
-        beforeSend: function(request) {
-          request.setRequestHeader("User-Agent","DiscordBot");
-        }
-    });
 
     $('#send_message_submit').on('click',function(){
         $('#success_message').text("送信中...");
