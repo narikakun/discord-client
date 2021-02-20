@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Discord Client</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./js/main.js"></script>
+    </head>
+    <body>
+        <h1>Discord Client</h1>
+        <p style="color: black;" id="success_message"></p>
+        <p style="color: red;" id="error_message"></p>
+        <div id="set_token">
+            <h2>Tokenを設定</h2>
+            <input type="text" id="set_token_input"/>
+            <button id="set_token_submit">設定</button>
+        </div>
+        <div id="send_message">
+            <h2>メッセージを送信</h2>
+            <p>チャンネルID</p>
+            <input type="text" id="send_message_channel"/>
+            <p>メッセージ内容</p>
+            <input type="text" id="send_message_content"/>
+            <button id="send_message_submit">送信</button>
+        </div>
+    </body>
+</html>
