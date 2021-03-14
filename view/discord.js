@@ -2,7 +2,6 @@ var config = {
     token: "",
     api: "https://discord.com/api/v6"
 }
-$(function(){
     $('#set_token_submit').on('click',function(){
         config.token = $('#set_token_input').val();
         $('#success_message').text("問い合わせ中...");
@@ -60,4 +59,3 @@ $(function(){
             }
         })
     });
-});
